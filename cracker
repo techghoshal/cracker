@@ -1,0 +1,81 @@
+#!/bin/bash
+clear
+if [ -x crunch/help.txt ]
+then
+     clear
+else
+    echo -e "Supported Files: RAR,ZIP,PDF,Office \n Author: Anindya Ghoshal" | lolcat -f | boxes -d parchment
+    sleep 2
+echo 
+echo -ne '#####                     (33%)\r' | lolcat -f
+sleep 1
+echo -ne '#############             (66%)\r' | lolcat -f
+sleep 1
+echo -ne '#######################   (100%)\r' | lolcat -f
+sleep 1
+echo -ne '\n'
+echo 
+clear
+     chmod +x crunch/help.txt
+fi
+
+
+
+echo
+figlet "Cracker" | lolcat -f | boxes -d mouse
+echo 
+read -p "> Do you have a password list? Y/[N]: " start
+echo
+   
+#Choose password list 
+#n = no
+ if [ "$start" == n ] || [ "$start" == N ]
+ then 
+ echo "> Which tool do you want to use to create a password list? " | lolcat -f | boxes -d peek -a c
+ echo
+ select pass_tool in "Cupp" "Crunch" "Download"; do
+ 
+ #make password list use cupp
+ case $pass_tool  in 
+ "Cupp")
+ clear
+ echo 
+ ./cupp/cupp.py -i
+ sleep 1
+ #Password Crack
+  cd crack
+ ./pao.sh
+ ;;
+ #make password list use crunch
+ "Crunch")
+ echo
+ #cd crunch
+ ./crunch/crunch.sh
+ sleep 1
+  #Password Crack
+  cd crack
+ ./pao.sh
+ ;;
+ #download password list
+ "Download")
+ clear
+ echo
+ ./cupp/cupp.py -l
+ sleep 1
+  #Password Crack
+  cd crack
+ ./pao.sh
+ ;;
+ esac
+ done
+ fi
+
+#Password Crack
+#y = yes
+ if [ "$start" == y ] || [ "$start" == Y ]
+ then
+ cd crack
+ ./pao.sh
+ fi
+
+
