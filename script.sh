@@ -27,6 +27,10 @@ apt-get install lolcat
 apt-get install figlet
 apt-get install john
 
+git clone https://github.com/Mebus/cupp.git
+cd crack
+git clone https://github.com/hamedA2/Zydra.git
+cd ..
 chmod +x cracker
 chmod +x crunch/crunch.sh
 chmod +x cupp/cupp.py
