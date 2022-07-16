@@ -27,3 +27,13 @@ $ sudo ./cracker
 ## Screenshots
 
 ![cracker](https://user-images.githubusercontent.com/85815644/179342709-b6c45fe4-26a6-43af-8e04-d02cc195f85a.png)
+
+## Authors
+
+- [Anindya Ghoshal](https://www.youtube.com/channel/UCPNhwkJ4zc3FXGn-Rba6Hvg)
+
+
+## Disclaimer
+
+This tool is only for testing and academic purposes Do not use it for illegal purposes!
+
