@@ -12,6 +12,7 @@ Cracker is a file password recovery tool. It uses the dictionary search or Bute 
 ## Installation
 
 Download Cracker by cloing the Git repository: 
+
 `$ git clone git@github.com:aonetecha/cracker.git`
     
 ## Usage
