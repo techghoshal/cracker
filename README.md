@@ -14,12 +14,13 @@ Cracker is a file password recovery tool. It uses the dictionary search or Bute 
 Download Cracker by cloing the Git repository: 
 
 ```bash
-$ git clone
-$ sudo ./script.sh 
+$ git clone git@github.com:aonetecha/cracker.git 
 ```
     
 ## Usage
 ```javascript
+$ sudo chmod +x script.sh
+$ sudo ./script.sh
 $ sudo ./cracker
 ```
 
