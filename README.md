@@ -17,6 +17,7 @@ Download Cracker by cloing the Git repository:
     
 ## Usage
 ```javascript
+$ cd cracker
 $ sudo chmod +x script.sh
 $ sudo ./script.sh
 $ sudo ./cracker

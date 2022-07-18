@@ -22,10 +22,15 @@ pip3 install termcolor
 pip3 install rarfile pyfiglet py-term
 
 apt-get install crunch
+sleep 1
 apt-get install boxes
+sleep 1
 apt-get install lolcat
+sleep 1
 apt-get install figlet
+sleep 1
 apt-get install john
+sleep 1
 
 git clone https://github.com/Mebus/cupp.git
 cd crack
